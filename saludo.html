@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Datos</title>
+</head>
+<body>
+    <form onsubmit="saludar(); return false;">
+        Nombre: <input type="text" id="nombre"><br>
+        Apellido: <input type="text" id="apellido"><br>
+        Curso: <input type="text" id="curso"><br><br>
+        <button type="submit">Enviar</button>
+    </form>
+
+    <script>
+        function saludar(){
+            let nombre = document.getElementById("nombre").value;
+            let apellido = document.getElementById("apellido").value;
+            let curso = document.getElementById("curso").value;
+
+            let nuevaVentana = window.open("", "_blank");
+            nuevaVentana.document.write("<h2>Bienvenido/a " + nombre + " " + apellido + " del curso " + curso + ".</h2>");
+        }
+    </script>
+</body>
+</html>

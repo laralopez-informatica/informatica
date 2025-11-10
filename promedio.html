@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Promedio</title>
+</head>
+<body>
+    <button onclick="calcular()">Calcular promedio</button>
+
+    <script>
+        function calcular(){
+            let n1 = Number(prompt("Ingrese la primera nota:"));
+            let n2 = Number(prompt("Ingrese la segunda nota:"));
+            let n3 = Number(prompt("Ingrese la tercera nota:"));
+            let promedio = (n1 + n2 + n3) / 3;
+
+            if(promedio >= 6){
+                alert("Aprobado con promedio " + promedio.toFixed(1));
+            } else {
+                alert("Desaprobado con promedio " + promedio.toFixed(1));
+            }
+        }
+    </script>
+</body>
+</html>
